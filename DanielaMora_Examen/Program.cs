@@ -1,4 +1,8 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<DanielaMoraDB_Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DanielaMoraDB_Context") ?? throw new InvalidOperationException("Connection string 'DanielaMoraDB_Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

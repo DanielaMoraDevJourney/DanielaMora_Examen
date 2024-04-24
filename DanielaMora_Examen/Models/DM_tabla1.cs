@@ -4,6 +4,8 @@ namespace DanielaMora_Examen.Models
 {
     public class DM_tabla1
     {
+
+        [Key]
         public int IdDm { get; set; }
 
         [StringLength(10, MinimumLength = 5)]
@@ -15,8 +17,6 @@ namespace DanielaMora_Examen.Models
         [Required]
         public bool CuentaAhorro { get; set; }
         public bool CuentaCorriente { get; set; }
-
-
 
         [Required(ErrorMessage = "La fecha de la Cita Consulta es requerida.")]
         [DataType(DataType.Date)]
