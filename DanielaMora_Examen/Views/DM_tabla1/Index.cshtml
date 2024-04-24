@@ -7,7 +7,7 @@
 <h1>Registro De Clientes y Asignación de </h1>
 
 <p>
-    <a asp-action="Asignar Citas">Create New</a>
+    <a asp-action="Create">Asignar Cita a Cliente</a>
 </p>
 <table class="table">
     <thead>
@@ -55,9 +55,9 @@
                 @Html.DisplayFor(modelItem => item.DineroDisponible)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdDm">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdDm">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdDm">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdDm">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdDm">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdDm">Eliminar</a>
             </td>
         </tr>
 }
