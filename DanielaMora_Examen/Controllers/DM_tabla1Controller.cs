@@ -53,7 +53,7 @@ namespace DanielaMora_Examen.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdDm,Nombres,Apellidos,CuentaAhorro,CuentaCorriente,CitaConsulta,DineroDisponible")] DM_tabla1 dM_tabla1)
+        public async Task<IActionResult> Create([Bind("IdDm,DM_Nombres,DM_Apellidos,DM_CuentaAhorro,DM_CuentaCorriente,DM_CitaConsulta,DM_DineroDisponible")] DM_tabla1 dM_tabla1)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace DanielaMora_Examen.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdDm,Nombres,Apellidos,CuentaAhorro,CuentaCorriente,CitaConsulta,DineroDisponible")] DM_tabla1 dM_tabla1)
+        public async Task<IActionResult> Edit(int id, [Bind("IdDm,DM_Nombres,DM_Apellidos,DM_CuentaAhorro,DM_CuentaCorriente,DM_CitaConsulta,DM_DineroDisponible")] DM_tabla1 dM_tabla1)
         {
             if (id != dM_tabla1.IdDm)
             {

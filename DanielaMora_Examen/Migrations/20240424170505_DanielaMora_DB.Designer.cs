@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DanielaMora_Examen.Migrations
 {
     [DbContext(typeof(DanielaMoraDB_Context))]
-    [Migration("20240424160351_DanielaMora_DB")]
+    [Migration("20240424170505_DanielaMora_DB")]
     partial class DanielaMora_DB
     {
         /// <inheritdoc />
@@ -32,22 +32,22 @@ namespace DanielaMora_Examen.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdDm"));
 
-                    b.Property<string>("Apellidos")
+                    b.Property<string>("DM_Apellidos")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CitaConsulta")
+                    b.Property<DateTime>("DM_CitaConsulta")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("CuentaAhorro")
+                    b.Property<bool>("DM_CuentaAhorro")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("CuentaCorriente")
+                    b.Property<bool>("DM_CuentaCorriente")
                         .HasColumnType("bit");
 
-                    b.Property<decimal>("DineroDisponible")
+                    b.Property<decimal>("DM_DineroDisponible")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("Nombres")
+                    b.Property<string>("DM_Nombres")
                         .IsRequired()
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");

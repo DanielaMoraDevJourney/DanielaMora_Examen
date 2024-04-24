@@ -17,12 +17,12 @@ namespace DanielaMora_Examen.Migrations
                 {
                     IdDm = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombres = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CuentaAhorro = table.Column<bool>(type: "bit", nullable: false),
-                    CuentaCorriente = table.Column<bool>(type: "bit", nullable: false),
-                    CitaConsulta = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DineroDisponible = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    DM_Nombres = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    DM_Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DM_CuentaAhorro = table.Column<bool>(type: "bit", nullable: false),
+                    DM_CuentaCorriente = table.Column<bool>(type: "bit", nullable: false),
+                    DM_CitaConsulta = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DM_DineroDisponible = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
