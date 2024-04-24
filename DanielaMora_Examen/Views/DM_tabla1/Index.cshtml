@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<DanielaMora_Examen.Models.DM_tabla1>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "TABLA DE CLIENTES";
 }
 
-<h1>Index</h1>
+<h1>Asignación de Clientes</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Asigna un cliente</a>
 </p>
 <table class="table">
     <thead>
@@ -55,9 +55,9 @@
                 @Html.DisplayFor(modelItem => item.DM_DineroDisponible)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdDm">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdDm">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdDm">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdDm">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdDm">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdDm">Borrar</a>
             </td>
         </tr>
 }
