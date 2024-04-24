@@ -16,6 +16,9 @@ namespace DanielaMora_Examen.Models
         public bool CuentaAhorro { get; set; }
         public bool CuentaCorriente { get; set; }
 
+
+
+        [Required(ErrorMessage = "La fecha de la Cita Consulta es requerida.")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime CitaConsulta { get; set; }
